@@ -46,7 +46,6 @@ class Device:
         elif self.results < -1023 : self.results = 1023
         if self.angel > 170 or self.angel < 15: 
             self.results = 0
-            #print("cant save it")
 
     def balance(self, kp, ki, kd, setpoint):
         self.pid(kp, ki, kd, setpoint)

@@ -22,7 +22,7 @@ def main():
         #print(radio.receive())
         #print(msg)
         if msg != None:
-            floatnum = extract_float_from_string(msg)
+            floatnum = getfloatfromstring(msg)
             if floatnum != None:
                 kp = floatnum[0]
                 ki = floatnum[1]
@@ -34,7 +34,7 @@ def main():
         sleep(10)
         radio.send(values)
              
-def extract_float_from_string(s):
+def getfloatfromstring(s):
     numlist = []
     words = s.split(" ")
 
